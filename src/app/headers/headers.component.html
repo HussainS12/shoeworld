@@ -1,0 +1,33 @@
+<header>
+  <a routerLink="" class="brand-name bold-500">Shoeworld</a>
+  <nav class="regular-400">
+    <ul>
+      <li><a routerLink="">Home</a></li>
+      <li *ngIf="!isAdmin"><a routerLink="products/all">Products</a></li>
+      <li>
+        <div *ngIf="isAdmin">
+          <a routerLink="inventory">Inventory </a>
+        </div>
+      </li>
+      <li>
+        <div *ngIf="isAdmin">
+          <a routerLink="users">User List </a>
+        </div>
+      </li>
+      <li *ngIf="!isAdmin">
+        <a routerLink="cart"
+          >Cart <i class="fas fa-shopping-cart"></i
+          ><span class="cartCount">{{ count }}</span></a
+        >
+      </li>
+      <li>
+        <div *ngIf="name">
+          <a routerLink="">Hi,{{ name }}</a>
+        </div>
+      </li>
+      <li *ngIf="!name">
+        <a routerLink="login">Login <i class="fas fa-sign-in-alt"></i></a>
+      </li>
+    </ul>
+  </nav>
+</header>

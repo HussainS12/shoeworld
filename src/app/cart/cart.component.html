@@ -1,0 +1,39 @@
+<div *ngIf="CartTotal === 0">
+  <h4>Cart is Empty</h4>
+  <a routerLink="/products/all">Continue Shopping</a>
+</div>
+
+<table *ngIf="CartTotal !== 0">
+  <tr>
+    <th>Image</th>
+    <th>Product Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let C of CartItems">
+    <td>
+      <img
+        [src]="C.ImgURL"
+        alt=""
+        style="width: 50px; height: 50px; object-fit: contain"
+      />
+    </td>
+    <td>{{ C.Name }}</td>
+    <td>{{ C.Price | currency }}</td>
+    <td>{{ C.Category }}</td>
+    <td id="CrossIcon" (click)="DeleteItem(C.id)">
+      <i class="fas fa-times"></i>
+    </td>
+  </tr>
+  <br />
+  <tr id="totalsRow">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><b>Total</b></td>
+    <td>
+      <b>{{ CartTotal | currency }}</b>
+    </td>
+  </tr>
+</table>

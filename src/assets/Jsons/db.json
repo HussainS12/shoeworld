@@ -1,0 +1,108 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "Name": "Hussain Saifuddin",
+      "Email": "Hussainlala58@gmail.com",
+      "Username": "Hussain123",
+      "Password": "123456",
+      "Phone": 1234567890
+    },
+    {
+      "Name": "Hussain saifuddin ",
+      "Email": "Hussainlala58@gmail.com",
+      "Username": "Hussainc43",
+      "Password": "123456",
+      "Phone": "1234567890",
+      "id": 2
+    },
+    {
+      "Name": "Burhanuddin",
+      "Email": "Burhan1234@gmail.com",
+      "Username": "Burhan321",
+      "Password": "B32145",
+      "Phone": "1234567899",
+      "id": 3
+    },
+    {
+      "Name": "Hussain saifuddin ",
+      "Email": "Burhan1234@gmail.com",
+      "Username": "Hussainc43",
+      "Password": "1523453453",
+      "Phone": "1234567890",
+      "id": 4
+    }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "Name": "Afrojack Air Series",
+      "ImgURL": "assets/images/AfrojackAirSeries.jpg",
+      "Price": 140,
+      "Category": "Afrojack"
+    },
+    {
+      "id": 2,
+      "Name": "Reebok Unisex Shoes",
+      "ImgURL": "assets/images/ReebokUnisez.JPG",
+      "Price": 180,
+      "Category": "Reebok"
+    },
+    {
+      "id": 3,
+      "Name": "Nike Running Men Shoes",
+      "ImgURL": "assets/images/Shoe3.jpeg",
+      "Price": 180,
+      "Category": "Nike"
+    },
+    {
+      "id": 4,
+      "Name": "Nike Women Running Shoes",
+      "ImgURL": "assets/images/WomenCushion.jpg",
+      "Price": 100,
+      "Category": "Nike"
+    },
+    {
+      "id": 5,
+      "Name": "Nike Running Shoes for Women",
+      "ImgURL": "assets/images/WomenNike.jpg",
+      "Price": 120,
+      "Category": "Nike"
+    },
+    {
+      "id": 6,
+      "Name": "Reebok Women Running Shoes",
+      "ImgURL": "assets/images/ReebokWomen.jpg",
+      "Price": 90,
+      "Category": "Reebok"
+    },
+    {
+      "id": 7,
+      "Name": "Afrojack Men Runnig Shoes",
+      "ImgURL": "assets/images/AfrojackMen2.jpg",
+      "Price": 80,
+      "Category": "Afrojack"
+    },
+    {
+      "id": 8,
+      "Name": "Afrojack Men Runnig Shoes",
+      "ImgURL": "assets/images/Shoe.jpg",
+      "Price": 100,
+      "Category": "Afrojack"
+    },
+    {
+      "id": 9,
+      "Name": "Reebok Zig Running Shoes",
+      "ImgURL": "assets/images/ReebokZip.JPG",
+      "Price": 190,
+      "Category": "Reebok"
+    },
+    {
+      "id": 10,
+      "Name": "Reebok Runnig Shoes",
+      "ImgURL": "assets/images/Shoe2.jpeg",
+      "Price": 160,
+      "Category": "Reebok"
+    }
+  ]
+}

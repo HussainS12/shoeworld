@@ -1,0 +1,30 @@
+table {
+  border: 1;
+  border-collapse: collapse;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  //background-color: blueviolet;
+  tr {
+    &:hover {
+      background-color: rgb(221, 221, 221);
+    }
+    th,
+    td {
+      border: 1px solid black;
+      height: 5vh;
+    }
+    th {
+      background-color: blueviolet;
+    }
+  }
+}
+
+#totalsRow {
+  &:hover {
+    background: none;
+  }
+  td {
+    border: none;
+  }
+}

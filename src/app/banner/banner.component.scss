@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "Left Right";
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ff757d;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  grid-area: "Left";
+  align-items: center;
+  text-align: center;
+}
+
+.left h4 {
+  font-size: 26px;
+  font-weight: thin;
+}
+
+.left h1 {
+  font-size: 90px;
+}
+
+.left a {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 30%;
+  text-decoration: none;
+  display: block;
+  padding: 20px 40px;
+  color: white;
+  background-color: rgb(32, 32, 32);
+}
+
+.left a:hover {
+  background-color: black;
+}
+
+.right {
+  grid-area: "Right";
+  align-items: center;
+}
+
+.right img {
+  width: 480px;
+  height: 480px;
+  transform: rotate(-45deg);
+  position: relative;
+  right: 50px;
+  top: -30px;
+}

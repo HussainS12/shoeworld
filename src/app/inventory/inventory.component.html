@@ -1,0 +1,19 @@
+<h1>Inventory Items</h1>
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let p of Products">
+    <td>{{ p.id }}</td>
+    <td>{{ p.Name }}</td>
+    <td><img src="{{ p.ImgURL }}" alt="" /></td>
+    <td>{{ p.Price }}</td>
+    <td>{{ p.Category }}</td>
+    <td><button (click)="delItem(p.id)">Delete</button></td>
+  </tr>
+</table>

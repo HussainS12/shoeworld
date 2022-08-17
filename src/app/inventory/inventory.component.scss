@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+  margin-bottom: 30px;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  tr {
+    height: 3vh;
+    th {
+      height: 8vh;
+    }
+    td {
+      text-align: center;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+      button {
+        display: block;
+        padding: 10px 30px;
+        color: white;
+        background-color: red;
+        border: none;
+        align-self: center;
+        justify-self: center;
+        margin-left: 25%;
+
+        &:hover {
+          background-color: rgb(228, 6, 6);
+        }
+      }
+    }
+  }
+}

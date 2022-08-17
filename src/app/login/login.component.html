@@ -1,0 +1,20 @@
+<form (ngSubmit)="login()" [formGroup]="loginForm">
+  <h1 class="bold-500">Login</h1>
+  <br />
+  <div *ngIf="invalid">
+    <small>Invalid Username or Password</small>
+  </div>
+  <br />
+
+  <label for="Username">Username</label>
+  <input type="text" name="Username" id="Username" formControlName="Username" />
+  <label for="Password">Password</label>
+  <input
+    type="password"
+    name="Password"
+    id="Password"
+    formControlName="Password"
+  />
+  <input type="submit" value="Login" />
+</form>
+<p>Not a user?<a routerLink="/signup"> Sign Up</a></p>

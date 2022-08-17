@@ -1,0 +1,80 @@
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <h1>Sign Up</h1>
+  <div>
+    <label for="Name">Name</label>
+    <input
+      formControlName="Name"
+      type="text"
+      name="Name"
+      id="Name"
+      [class.invalid]="Name.invalid && Name.touched"
+    />
+    <div *ngIf="Name.invalid && Name.touched">
+      <small *ngIf="Name.errors?.required">Name is required</small>
+    </div>
+  </div>
+  <div>
+    <label for="Email">Email</label>
+    <input
+      formControlName="Email"
+      type="email"
+      name="Email"
+      id="Email"
+      [class.invalid]="Email.invalid && Email.touched"
+    />
+    <div *ngIf="Email.invalid && Email.touched">
+      <small *ngIf="Email.errors?.required">Email is required</small>
+    </div>
+  </div>
+  <div>
+    <label for="Username">Username</label>
+    <input
+      formControlName="Username"
+      type="text"
+      name="Username"
+      id="Username"
+      [class.invalid]="Username.invalid && Username.touched"
+    />
+    <div *ngIf="Username.invalid && Username.touched">
+      <small *ngIf="Username.errors?.required">Username is required</small>
+      <small *ngIf="Username.errors?.pattern"
+        >Username can only have a-z A-Z 0-9 . and !</small
+      >
+      <small *ngIf="Username.errors?.minlength"
+        >Username must be atleast 6 characters long</small
+      >
+    </div>
+  </div>
+  <div>
+    <label for="Password">Password</label>
+    <input
+      formControlName="Password"
+      type="password"
+      name="Password"
+      id="Password"
+      [class.invalid]="Password.invalid && Password.touched"
+    />
+    <small *ngIf="Password.invalid && Password.touched"
+      >Password is required</small
+    >
+  </div>
+  <div>
+    <label for="Phone">Phone</label>
+    <input
+      formControlName="Phone"
+      type="text"
+      name="Phone"
+      id="Phone"
+      [class.invalid]="Phone.invalid && Phone.touched"
+    />
+    <div *ngIf="Phone.invalid && Phone.touched">
+      <small *ngIf="Phone.errors?.required">Phone is required</small>
+      <small *ngIf="Phone.errors?.pattern"
+        >Phone number must have 10 digits.</small
+      >
+    </div>
+  </div>
+  <button>Register</button>
+  <br /><br />
+  <p>Already a user?<a routerLink="/login">Login</a></p>
+</form>

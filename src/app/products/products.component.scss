@@ -1,0 +1,16 @@
+.selectCategory {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    li {
+      a {
+        display: block;
+
+        padding: 5px 10px;
+      }
+    }
+  }
+}

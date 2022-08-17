@@ -1,0 +1,47 @@
+form {
+  width: 50%;
+  margin-left: 20px;
+  h1 {
+    margin: 50px 0px 20px 0px;
+    color: rgb(155, 132, 255);
+    //text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 5vh;
+      margin: 10px 0px;
+      width: 50%;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .error-msg {
+    color: red;
+  }
+  .submitBtn {
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(14, 0, 206);
+
+    &:hover {
+      background-color: rgb(1, 4, 168);
+    }
+  }
+  .invalid {
+    border: 1px solid red;
+  }
+  small {
+    color: red;
+  }
+}

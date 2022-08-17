@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="Heading"><h2 style="text-align: center">Best Seller</h2></div>
+</div>
+
+<div class="products">
+  <ul>
+    <li *ngFor="let Product of Products">
+      <img src="{{ Product.ImgURL }}" alt="{{ Product.ImgURL }}" />
+      <p id="ProductName" class="light-300">{{ Product.Name }}</p>
+      <p id="ProductPrice" class="normal-400">{{ Product.Price | currency }}</p>
+      <button id="addToCart" (click)="setItem(Product)">ADD TO CART</button>
+    </li>
+  </ul>
+</div>
+
+<div id="AllPLink">
+  <a routerLink="products/all">View All Products</a>
+</div>
